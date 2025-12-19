@@ -9822,7 +9822,7 @@ if (clientloggerIsEnabled) {
     </script>
 </div>
 
-        <div data-dialog-content>
+        <div data-dialog-content>		
             
         </div>
 
